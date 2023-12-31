@@ -1,6 +1,7 @@
 class Cat:
 
     def __init__(self, name, age):
+        """ Initialize Cat object"""
         self.name = name
         self.age = age
 
@@ -14,4 +15,5 @@ class Cat:
         print(f"{self.name} scurries away!\n")
 
     def Purr(self):
-        print("Purrrrrr\n")
+        print(f"{self.name} is vibrating\n"
+              f"Purrrrrr\n")
