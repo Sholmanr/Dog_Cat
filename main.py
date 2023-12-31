@@ -13,7 +13,7 @@ pets = []
 while another_pet:
     pet_type = input("Do you have a dog or a cat?\n")
     more = True
-
+    proceed = True
     while more:
         if pet_type == "dog":
             name = input("What is your dog's name?\n")
@@ -40,15 +40,15 @@ while another_pet:
                 if cont.lower() == "n" or cont.lower() == "no":
                     proceed = False
 
-                    more = input("Do you have anymore pets? y/n")
+                    other_pets = input("Do you have anymore pets? y/n")
 
-                    if cont.lower() == 'y':
+                    if other_pets.lower() == "y":
                         more = False
-                        pass
-                    if cont.lower() == 'n':
+
+                    if other_pets.lower() == "n":
                         more = False
                         another_pet = False
-                elif cont.lower() == "y" or cont.lower() == "yes":
+                elif other_pets.lower() == "y" or cont.lower() == "yes":
                     proceed = True
 
         elif pet_type == "cat":
@@ -60,7 +60,7 @@ while another_pet:
                                "1. Look at " + new_cat.name + "\n" +
                                "2. Pet " + new_cat.name + "'s belly\n" +
                                "3. Make a loud noise\n" +
-                                "4. SLowly approach " + new_cat + " and pet them\n"))
+                                "4. SLowly approach " + new_cat.name + " and pet them\n"))
 
                 match choice:
                     case 1:
@@ -77,16 +77,16 @@ while another_pet:
                 if cont.lower() == "n" or cont.lower() == "no":
                     proceed = False
 
-                    more = input("Do you have anymore pets? y/n")
+                    other_pets = input("Do you have anymore pets? y/n")
 
-                    if cont.lower() == 'y':
+                    if other_pets.lower() == "y":
                         more = False
-                        pass
-                    if cont.lower() == 'n':
+
+                    if other_pets.lower() == "n":
                         more = False
                         another_pet = False
 
-                elif cont.lower() == "y" or cont.lower() == "yes":
+                elif other_pets.lower() == "y" or cont.lower() == "yes":
                     proceed = True
 
 
