@@ -14,6 +14,9 @@ class Cat:
     def runAway(self):
         print(f"{self.name} scurries away!\n")
 
-    def Purr(self):
+    def purr(self):
         print(f"{self.name} is vibrating\n"
               f"Purrrrrr\n")
+            
+    def scratch(self):
+        print(f"{self.name} scratched you \n")
